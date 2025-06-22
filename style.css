@@ -8,103 +8,127 @@
   box-sizing: border-box;
   color: #fff;
 }
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   background-image: url(background/fundo-login.png);
-   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-}
+
 .container {
-  background-color: rgba(75, 75, 75, 0.49);
-  width: 430px;
-  height: 420px;
-  border: 3px solid rgba(255, 255, 255, 0.127);
-  border-radius: 10px;
-  padding: 30px 40px;
-  box-shadow: rgba(0, 0, 0, 0.1);
+  background-color: rgba(75, 75, 75, 0.6);
+  width: 450px;
+  padding: 40px 50px;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
 }
+
 .container h1 {
-  font-size: 50px;
+  font-size: 48px;
   text-align: center;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
 }
+
 .input-box {
   position: relative;
-  width: 100%;
-  height: 40px;
-  margin: 30px 0;
-  padding-bottom: 20px;
+  margin-bottom: 30px;
 }
+
 .input-box input {
   width: 100%;
-  height: 100%;
+  height: 45px;
   background-color: transparent;
-  outline: 2px solid #fff;
-  border: none;
+  border: 2px solid #ffffff80;
+  border-radius: 25px;
   font-size: 16px;
-  border-radius: 20px;
-  color: #fff;
-  padding: 20px 45px 20px 20px;
+  padding: 0 50px 0 20px;
+  transition: 0.3s ease;
 }
+
+.input-box input:focus {
+  border-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
 .input-box input::placeholder {
   color: #fefefe;
-  opacity: 0.5;
+  opacity: 0.6;
 }
+
 .input-box i {
   position: absolute;
   right: 20px;
   top: 50%;
   transform: translateY(-50%);
+  opacity: 0.7;
 }
+
 .remember-forgot {
-  font-size: 12px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: -15px 0 20px 0;
-  padding-bottom: 25px;
+  font-size: 14px;
+  margin-bottom: 25px;
 }
+
 .remember-forgot label input {
   accent-color: #fff;
-  margin-right: 5px;
+  margin-right: 8px;
 }
+
 .remember-forgot a {
   text-decoration: none;
   color: #fff;
-  font-size: 16px;
+  opacity: 0.8;
+  transition: 0.3s;
 }
+
 .remember-forgot a:hover {
   text-decoration: underline;
+  opacity: 1;
 }
+
 .login-button {
-  text-align: center;
   width: 100%;
   height: 50px;
   background-color: #c5c5c5;
   border: none;
-  border-radius: 20px;
-  font-size: 25px;
-  color: #000000;
+  border-radius: 25px;
+  font-size: 20px;
+  color: #000;
   cursor: pointer;
-  font-weight: 600;
-  box-shadow: rgba(0, 0, 0, 0.2);
+  font-weight: 700;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: 0.4s ease;
 }
+
 .login-button:hover {
   background-color: transparent;
+  color: #fff;
   border: 2px solid #fff;
-  transition-duration: 0.5s;
 }
+
 .registrar {
   text-align: center;
   margin-top: 20px;
+  font-size: 14px;
 }
+
 .registrar a {
   text-decoration: none;
   color: #fff;
-  font-size: 16px;
+  opacity: 0.8;
+  transition: 0.3s;
 }
+
 .registrar a:hover {
   text-decoration: underline;
+  opacity: 1;
 }
