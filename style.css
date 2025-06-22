@@ -17,11 +17,13 @@ body {
   background-image: url(background/fundo-login.png);
   background-size: cover;
   background-position: center;
+  padding: 20px;
 }
 
 .container {
   background-color: rgba(75, 75, 75, 0.6);
   width: 450px;
+  max-width: 100%;
   padding: 40px 50px;
   border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -76,6 +78,7 @@ body {
   align-items: center;
   font-size: 14px;
   margin-bottom: 25px;
+  flex-wrap: wrap;
 }
 
 .remember-forgot label input {
@@ -131,4 +134,59 @@ body {
 .registrar a:hover {
   text-decoration: underline;
   opacity: 1;
+}
+
+/* Responsividade para tablets (até 768px) */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 30px 20px;
+    border-radius: 10px;
+  }
+
+  .container h1 {
+    font-size: 36px;
+  }
+
+  .login-button {
+    height: 45px;
+    font-size: 18px;
+  }
+}
+
+/* Responsividade para celulares (até 480px) */
+@media (max-width: 480px) {
+  .container {
+    padding: 20px 15px;
+  }
+
+  .container h1 {
+    font-size: 28px;
+  }
+
+  .input-box input {
+    height: 40px;
+    font-size: 14px;
+    padding-left: 15px;
+    padding-right: 40px;
+  }
+
+  .input-box i {
+    right: 10px;
+  }
+
+  .remember-forgot {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .login-button {
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .registrar {
+    font-size: 12px;
+  }
 }
