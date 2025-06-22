@@ -14,6 +14,8 @@ body {
   align-items: center;
   min-height: 100vh;
   background-image: url(background/fundo-login.png);
+   background-repeat: no-repeat;
+}
 }
 .container {
   background-color: rgba(75, 75, 75, 0.49);
