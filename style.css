@@ -99,6 +99,7 @@ body {
 }
 
 .login-button {
+  text-align: center;
   width: 100%;
   height: 50px;
   background-color: #c5c5c5;
